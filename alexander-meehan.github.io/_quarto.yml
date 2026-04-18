@@ -14,8 +14,7 @@ website:
         text: CV
       - href: projects.qmd
         text: Projects
-      - href: research_proposal_field_exp.qmd
-        text: Research Proposal
+
 
 format:
   html:

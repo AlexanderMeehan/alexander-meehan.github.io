@@ -30,4 +30,3 @@ into clear, actionable insights for non-technical stakeholders
 
 ## More Projects
 A research proposal - the causal effect that physical activity can have on improved mental health as part of prescribed treatment. 
-[Research Proposal](research_proposal_field_exp.qmd)
