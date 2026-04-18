@@ -1,8 +1,9 @@
 ---
-title: Projects
----
----
 title: "Projects"
+listing:
+  contents: projects.yml
+  type: grid
+  sort: "date desc"
 ---
 
 ## Applied Consultancy Project *(MSc Dissertation)*
@@ -29,4 +30,4 @@ into clear, actionable insights for non-technical stakeholders
 ---
 
 ## More Projects
-A research proposal - the causal effect that physical activity can have on improved mental health as part of prescribed treatment. 
+A research proposal - the causal effect that physical activity can have on improved mental health as part of prescribed treatment.
