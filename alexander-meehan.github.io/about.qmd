@@ -18,7 +18,7 @@ Hi, I'm Alexander, an MSc Business Analytics candidate at Dublin City University
 with a background in Economics and Politics from University College Dublin.
 
 I'm passionate about bridging the gap between complex data and real-world business 
-strategy. My academic journey has equipped me with hands-on experience in Python, 
+strategy. My academic journey has equipped me with hands on experience in Python, 
 SQL, and machine learning, which I've applied to projects like predicting demand 
 and streamlining supply chain operations for SMEs through interactive dashboards 
 and data-driven insights.
