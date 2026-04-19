@@ -1,0 +1,25 @@
+*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+$primary:        #1B2A4A;
+$secondary:      #C9A84C;
+$body-bg:        #F4F6FA;
+$body-color:     #1B2A4A;
+$link-color:     #C9A84C;
+$navbar-bg:      #1B2A4A;
+$navbar-fg:      #F4F6FA;
+$font-family-sans-serif: "Inter", sans-serif;
+$headings-font-family:   "Playfair Display", serif;
+$headings-font-weight:   600;
+
+/*-- scss:rules --*/
+.navbar .nav-link,
+.navbar-brand {
+  color: #C9A84C !important;
+}
+
+h2 {
+  border-bottom: 2px solid $secondary;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.2rem;
+}
