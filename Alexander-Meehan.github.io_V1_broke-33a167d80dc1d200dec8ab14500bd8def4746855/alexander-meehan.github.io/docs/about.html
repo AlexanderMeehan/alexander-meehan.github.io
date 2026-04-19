@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alexander Meehan</title>
+<title>About Me – Alexander Meehan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,7 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -258,15 +257,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="./cv.qmd"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -287,41 +286,36 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-jolla">
+  <img src="eportfolio_landing_page.png" class="about-image
+  round " style="height: 15em; width: 15em;">
+ <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Alexander Meehan</h1>
+<h1 class="title">About Me</h1>
 </div>
-
-
-
 <div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
+</header><main class="content" id="quarto-document-content">
+
+<p>Hi, I’m Alexander — an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics from University College Dublin.</p>
+<p>I’m passionate about bridging the gap between complex data and real-world business strategy. My academic journey has equipped me with hands-on experience in Python, SQL, and machine learning, which I’ve applied to projects like predicting demand and streamlining supply chain operations for SMEs through interactive dashboards and data-driven insights.</p>
+<p>During my master’s dissertation, I served as project lead on an applied consultancy project — coordinating a team, delivering analytical recommendations, and building tools that translated messy datasets into clear, actionable decisions for stakeholders.</p>
+<p>Beyond the numbers, I’ve built a solid foundation in customer-facing and leadership roles — from managing sales and client relationships at Geoghegan’s Menswear to running the social media presence of UCD’s Politics &amp; International Relations Society.</p>
+<p>Outside of work and study, you’ll find me on the rugby pitch with Navan RFC or representing Bhulf Tón CLG.</p>
+<p>I’m available for opportunities from May <strong>2026</strong> — feel free to connect with me on <a href="https://linkedin.com/in/alexander-meehan-267875208">LinkedIn</a>.</p>
+<p>You might like to look at my projects <a href="projects/">projects</a></p>
 
 
-</header>
-
-
-<section id="hi-im-alexander" class="level1">
-<h1>Hi, I’m Alexander 👋</h1>
-<p>I’m an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics. I’m interested in using data to solve real business problems — from forecasting demand to building dashboards that make complex information easy to act on.</p>
-<p>This portfolio showcases my projects, skills and experience as I complete my masters and move into the world of data and business analytics.</p>
-<p>I’m available for opportunities from <strong>May 2026</strong>.</p>
-<p>💼 <a href="https://linkedin.com/in/alexander-meehan-267875208">LinkedIn</a></p>
-<hr>
-<p><a href="./about.html">About Me</a> · <a href="projects.qmd">Projects</a> · <a href="./cv.html">CV</a></p>
-
-
-</section>
-
-</main> <!-- /main -->
+</main> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://www.linkedin.com/in/alex-meehan-267875208" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+</div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -337,13 +331,6 @@ ul.task-list li input[type="checkbox"] {
       window.document.body.appendChild(a);
     }
     setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

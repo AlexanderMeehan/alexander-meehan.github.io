@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alexander Meehan</title>
+<title>Projects – Alexander Meehan</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,27 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-840486529cd2a687857b6a30bf58e6f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-d31321a59397c4cd92cf9315cda25f89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-840486529cd2a687857b6a30bf58e6f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-840486529cd2a687857b6a30bf58e6f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d31321a59397c4cd92cf9315cda25f89.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-840486529cd2a687857b6a30bf58e6f8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +76,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -247,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Alexander Meehan</span>
     </a>
   </div>
@@ -258,19 +318,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../cv.qmd"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.qmd"> 
+    <a class="nav-link" href="../projects.qmd"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -292,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Alexander Meehan</h1>
+<h1 class="title">Projects</h1>
 </div>
 
 
@@ -309,19 +369,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hi-im-alexander" class="level1">
-<h1>Hi, I’m Alexander 👋</h1>
-<p>I’m an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics. I’m interested in using data to solve real business problems — from forecasting demand to building dashboards that make complex information easy to act on.</p>
-<p>This portfolio showcases my projects, skills and experience as I complete my masters and move into the world of data and business analytics.</p>
-<p>I’m available for opportunities from <strong>May 2026</strong>.</p>
-<p>💼 <a href="https://linkedin.com/in/alexander-meehan-267875208">LinkedIn</a></p>
+<section id="applied-consultancy-project-msc-dissertation" class="level2">
+<h2 class="anchored" data-anchor-id="applied-consultancy-project-msc-dissertation">Applied Consultancy Project <em>(MSc Dissertation)</em></h2>
+<p><strong>Dublin City University | 2025–2026</strong></p>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Led an end-to-end data analytics consultancy engagement for an SME, focused on optimising product buying and inventory management through machine learning and data visualisation.</p>
+</section>
+<section id="my-role" class="level3">
+<h3 class="anchored" data-anchor-id="my-role">My Role</h3>
+<p>Served as <strong>project lead and primary point of contact</strong>, coordinating team collaboration and managing client communication throughout the project lifecycle.</p>
+</section>
+<section id="what-i-built" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-built">What I Built</h3>
+<ul>
+<li><strong>Demand forecasting models</strong> — Implemented machine learning models to predict product demand and streamline supply chain operations</li>
+<li><strong>Interactive dashboards</strong> — Developed visualisations to translate complex datasets into clear, actionable insights for non-technical stakeholders</li>
+</ul>
+</section>
+<section id="skills-used" class="level3">
+<h3 class="anchored" data-anchor-id="skills-used">Skills Used</h3>
+<p><code>Python</code> <code>Machine Learning</code> <code>Data Visualisation</code> <code>SQL</code> <code>Stakeholder Communication</code></p>
 <hr>
-<p><a href="./about.html">About Me</a> · <a href="projects.qmd">Projects</a> · <a href="./cv.html">CV</a></p>
+</section>
+</section>
+<section id="more-projects" class="level2">
+<h2 class="anchored" data-anchor-id="more-projects">More Projects</h2>
+<p>A research proposal - the causal effect that physical activity can have on improved mental health as part of prescribed treatment.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UmVzZWFyY2glMjBEZXNpZ24lMkNGaWVsZCUyMEV4cGVyaW1lbnRzJTJDTWVudGFsJTIwSGVhbHRo">
+<a href="docs/research_proposal_field_exp (1).docx" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Physical Activity as a Treatment for Mental Health
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBEZXNpZ24='); return false;">Research Design</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RmllbGQlMjBFeHBlcmltZW50cw=='); return false;">Field Experiments</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWVudGFsJTIwSGVhbHRo'); return false;">Mental Health</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A research proposal examining the causal effect of physical activity on improved mental health outcomes when used as part of prescribed treatment.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW50ZXJuYXRpb25hbCUyMFJlbGF0aW9ucyUyQ1BvbGl0aWNhbCUyMFBzeWNob2xvZ3klMkNEaXNpbmZvcm1hdGlvbg==">
+<a href="docs/IRNL30030_final_assignment_(1).docx" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The Psychological Effects of Disinformation on Conflict
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJuYXRpb25hbCUyMFJlbGF0aW9ucw=='); return false;">International Relations</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9saXRpY2FsJTIwUHN5Y2hvbG9neQ=='); return false;">Political Psychology</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGlzaW5mb3JtYXRpb24='); return false;">Disinformation</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>An analysis of how disinformation campaigns exploit cognitive biases to escalate societal conflict, using the Capitol Hill insurrection as a case study.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="RW50cmVwcmVuZXVyc2hpcCUyQ0J1c2luZXNzJTIwU3RyYXRlZ3klMkNIZWFsdGglMjBUZWNo">
+<a href="docs/MNA1201_New_Venture_Strategy_and_Planning.docx" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ConcussID: A New Venture to Improve Player Welfare
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RW50cmVwcmVuZXVyc2hpcA=='); return false;">Entrepreneurship</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVzaW5lc3MlMjBTdHJhdGVneQ=='); return false;">Business Strategy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoJTIwVGVjaA=='); return false;">Health Tech</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A new venture strategy for an AI-powered app that diagnoses concussion in grassroots athletes, addressing inequality in access to sports medicine.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
