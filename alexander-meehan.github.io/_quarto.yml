@@ -12,7 +12,7 @@ website:
         text: About
       - href: cv.qmd
         text: CV
-      - href: Projects/index.qmd
+      - href: Projects.qmd
         text: Projects
       - href: Python.qmd
         text: Python

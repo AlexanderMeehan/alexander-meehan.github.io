@@ -6,5 +6,13 @@
   {
     "listing": "/Projects/index.html",
     "items": []
+  },
+  {
+    "listing": "/docs/Projects/index.html",
+    "items": []
+  },
+  {
+    "listing": "/Projects.qmd/index.html",
+    "items": []
   }
 ]

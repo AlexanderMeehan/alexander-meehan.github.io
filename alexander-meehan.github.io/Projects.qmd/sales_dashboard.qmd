@@ -7,7 +7,8 @@ code-fold: true
 
 This dashboard presents a financial overview of a small-to-medium enterprise (SME),
 analysing monthly revenue, costs and profit across a full calendar year. Built using
-Python and Matplotlib.
+Python and Matplotlib. This dashboard is is similar to those that we have prodcued as 
+part of the Applied Consultancy Project. (For data protection reasons, the data repsented here is fictional)
 
 ```{python}
 import plotly.graph_objects as go
